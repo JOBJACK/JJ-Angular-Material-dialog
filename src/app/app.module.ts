@@ -4,8 +4,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
+import { AppComponent, DialogExample } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -16,8 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatDividerModule,
     MatTooltipModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, DialogExample],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
